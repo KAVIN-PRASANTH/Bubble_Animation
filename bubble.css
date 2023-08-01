@@ -1,0 +1,95 @@
+*{
+    padding:0;
+    margin: 0;
+}
+.bubbles{
+    width:100%;
+    height: 100%;
+    position:absolute;
+    background-color:black;
+    overflow: hidden;
+}
+.bub{
+    position: absolute;
+    bottom:-100px;
+    width:40px;
+    height: 40px;
+    background:#f1f1f1;
+    opacity:0.5;
+    animation: kavin 5s infinite ease-in;
+  
+}
+.bub:nth-child(1){
+  width:40px;
+  height:40px;
+  left:10%;
+  animation-duration:9s;
+  
+}
+.bub:nth-child(2){
+  width:20px;
+  height:20px;
+  left:20%;
+  animation-duration:7s;
+  animation-delay:1s;
+}
+.bub:nth-child(3){
+  width:50px;
+  height:50px;
+  left:35%;
+  animation-duration:4s;
+  animation-delay:2s;
+}
+.bub:nth-child(4){
+  width:70px;
+  height:70px;
+  left:50%;
+  animation-duration:5s;
+  animation-delay:0s;
+}
+.bub:nth-child(5){
+  width:40px;
+  height:40px;
+  left:60%;
+  animation-duration:7s;
+  transform: rotate(360deg);
+}
+.bub:nth-child(6){
+  width:20px;
+  height:20px;
+  left:70%;
+  animation-duration:8s;
+  animation-delay:1s;
+}
+.bub:nth-child(7){
+  width:50px;
+  height:50px;
+  left:85%;
+  animation-duration:6s;
+  animation-delay:2s;
+}
+.bub:nth-child(8){
+  width:80px;
+  height:80px;
+  left:90%;
+  animation-duration:10s;
+  animation-delay:0s;
+}
+@keyframes kavin{
+    0%{
+        bottom: -100px;
+        transform: rotate(45deg);
+    }
+    50%{
+        transform:translateX(300px);
+        transform: rotate(90deg);
+    }
+    100%{
+        bottom:1080px;
+        transform:translateX(200px);
+        transform: rotate(360deg);
+        background-color: antiquewhite;
+        
+    }
+    
+}
